@@ -1,0 +1,5 @@
+name: NoAnnounce
+version: '1.0.0'
+main: winlyps.noAnnounce.NoAnnounce
+api-version: '1.20'
+authors: [ Winlyps ]
