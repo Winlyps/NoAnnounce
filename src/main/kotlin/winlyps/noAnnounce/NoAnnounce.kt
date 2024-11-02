@@ -14,6 +14,9 @@ class NoAnnounce : JavaPlugin() {
 
     override fun onDisable() {
         // Plugin shutdown logic
-        logger.info("NoAnnounce plugin has been disabled.")
+        server.worlds.forEach { world ->
+            world.setGameRuleValue("announceAdvancements", "true")
+            logger.info("NoAnnounce plugin has been disabled.")
+        }
     }
 }
